@@ -4,5 +4,5 @@
   <h2 class="h1 lh-condensed col-9 mt-0">
     <a class="link-primary" title="{{ page.url | prepend: site.baseurl }}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
   </h2>
-  <p>{{ page.content }}</p>
+  <p>{{ page.content | strip_html }}</p>
 </div>
