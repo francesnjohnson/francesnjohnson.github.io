@@ -15,7 +15,3 @@ Swiss is a bold Jekyll theme inspired by Swiss design and the works of Massimo V
 * Dynamically generated navigation links. See docs below for adding pages with specific post category for-loops.
 
 ## Themes
-
-## Browser Support
-
-## Installation
