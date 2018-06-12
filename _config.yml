@@ -17,7 +17,7 @@ title: Swiss Theme
 description: A bold typographic theme inspired by Swiss design.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_repo: aidanjohnson # the GitHub repo name for your project
+github_repo:  # the GitHub repo name for your project
 github_username: aidanjohnson
 
 # Optional social link, you can choose from the following options:
