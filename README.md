@@ -11,24 +11,6 @@ Swiss is a bold Jekyll theme inspired by Swiss design and the works of Massimo V
 * Flexible styles that can be reused for customization without adding additional CSS.
 * Dynamically generated navigation links. See docs for adding pages with specific post category for-loops.
 
-## Installation
-
-Add this line to your Jekyll site's Gemfile:
-
-```ruby
-gem "github-pages", group: :jekyll_plugins
-```
-
-And add this line to your Jekyll site:
-
-```yaml
-remote_theme: broccolini/swiss
-```
-
-And then execute:
-
-    $ bundle
-
 ## Usage
 
 This theme comes in eight different color variations. The default is set to the black theme, to change to a different theme edit the config under `theme_color: black` to one of the following colors:
