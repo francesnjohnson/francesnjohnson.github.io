@@ -21,7 +21,7 @@ github_repo:  # the GitHub repo name for your project
 github_username: aidanjohnson
 
 # Optional social link, you can choose from the following options:
-# twitter (default), instagram, medium, or dribbble
+# email, linkedin, twitter, instagram, medium, or dribbble
 social_link: linkedin
 social_username: j-aidan-johnson
 
