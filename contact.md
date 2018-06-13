@@ -4,6 +4,9 @@ title: Contact
 permalink: /contact/
 ---
 
+#### LinkedIn:
+[Profile](https://www.linkedin.com/in/j-aidan-johnson/)
+
 #### Email:
 [johnsj96 [at] uw [dot] edu](mailto:johnsj96@uw.edu)
 #### Mobile:
