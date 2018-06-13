@@ -12,4 +12,5 @@ permalink: /about/
 ### Honours
 * 2018 WRF Innovation Post-Baccalaureate Fellow in Neuroengineering ([UW Institute for Neuroengineering](http://uwin.washington.edu/students/post-bacs/current/))
 
-### [Résumé](https://github.com/aidanjohnson/aidanjohnson.github.io/raw/master/johnsonaidan_resume/johnsonaidan_resume.pdf)
+### Résumé
+<embed src="https://github.com/aidanjohnson/aidanjohnson.github.io/raw/master/johnsonaidan_resume/johnsonaidan_resume.pdf" width="600px" height="500px" />
