@@ -1,4 +1,4 @@
-# Swiss Jekyll Theme
+# [Swiss Jekyll Theme](https://broccolini.net/swiss/)
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-swiss.svg)](https://badge.fury.io/rb/jekyll-swiss)
 
