@@ -10,6 +10,6 @@ permalink: /about/
 * BSc, <a href="https://www.ee.washington.edu">Electrical Engineering</a>, <a href="https://www.washington.edu">University of Washington</a>, Seattle, WA, USA, 2018
 
 ### Honours
-* 2018 WRF Innovation Post-Baccalaureate Fellow in Neuroengineering ([UW Institute for Neuroengineering](http://uwin.washington.edu/students/post-bacs/current/))
+* 2018 Washington Research Foundation Innovation Post-Baccalaureate Fellow in Neuroengineering ([UW Institute for Neuroengineering](http://uwin.washington.edu/students/post-bacs/current/))
 
 ### [Résumé](https://aidanjohnson.github.io/johnsonaidan_resume/johnsonaidan_resume.pdf)
