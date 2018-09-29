@@ -1,0 +1,221 @@
+% Resume/CV in LaTeX
+% Aidan Johnson
+% j.a.johnson@ieee.org
+% https://github.com/aidanjohnson
+% License: MIT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+ 
+\documentclass[letterpaper,11pt]{article}
+\usepackage[UKenglish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\renewcommand*\familydefault{\sfdefault} % Only if the base font of the document is to be sans serif
+\usepackage[parfill]{parskip} % Remove paragraph indentation
+\usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
+\usepackage{ifthen} % Required for ifthenelse statements
+
+\usepackage[left=1.0cm,top=1.0cm,right=1.0cm,bottom=1.0cm]{geometry} % Document margins
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[final, colorlinks = true, 
+            linkcolor = black, 
+            citecolor = black,
+            urlcolor = black]{hyperref} % For hyperlinks in the PDF
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\frenchspacing
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0cm}
+
+\pagestyle{empty} % Suppress page numbers
+
+% The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
+\def\sectionlineskip{\smallskip} % The space above the horizontal line for each section 
+\def\sectionskip{\smallskip} % The space after the heading section
+
+%----------------------------------------------------------------------------------------
+%	SECTION FORMATTING
+%----------------------------------------------------------------------------------------
+
+% Defines the rSection environment for the large sections within the CV
+\newenvironment{rSection}[1]{ % 1 input argument - section name
+\sectionskip
+\MakeUppercase{\bf #1} % Section title
+\sectionlineskip
+\hrule % Horizontal line
+\begin{list}{}{ % List for each individual item (subsection) in the section
+\setlength{\leftmargin}{1.5em} % Margin within the section
+}
+\item[]
+}{\end{list}}
+
+%----------------------------------------------------------------------------------------
+%	SUBSECTION FORMATTING
+%----------------------------------------------------------------------------------------
+
+\newenvironment{rSubsection}[6]{ % 6 input arguments - job title, time range employed, organisation name, location, and additional details
+{\bf #1} \hfill {#2} \\ % Bold job title and time range on the right
+\ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the organisation name and location line
+{#3} \hfill {#4} \\
+}
+\ifthenelse{\equal{#5}{}}{}{ % If the third argument is not specified, don't print the additional details
+{#5} \hfill {#6} \\
+}
+
+\begin{list}{$-$}{\leftmargin=1.5em} % math dash used for bullets, with indentation
+\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+\medskip
+}{\end{list}}
+
+%----------------------------------------------------------------------------------------
+%	RESUME
+%----------------------------------------------------------------------------------------
+
+\begin{document}  
+
+%----------------------------------------------------------------------------------------
+%	HEADING
+%----------------------------------------------------------------------------------------
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+
+\huge{\bf Aidan Johnson} & +1 (206) 919-3859
+\\ 20016 18th Avenue Northwest & \href{mailto:j.a.johnson@ieee.org}{j.a.johnson@ieee.org}
+\\ Shoreline, WA 98177-2209 & \href{https://www.linkedin.com/in/j-aidan-johnson/}{www.linkedin.com/in/j-aidan-johnson/}
+
+\end{tabular*}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\begin{rSubsection}{Bachelor of Science in Electrical Engineering}{September 2014 -- June 2018}{University of Washington}{Seattle, WA}{Cum Laude}{\textit{GPA:} 3.83/4.00}
+
+\item \textit{Concentration Coursework:} Design \& Application of Digital Signal Processing, Medical Imaging, Random Signals in Communications, Digital Image Processing, Discrete-Time \& Continuous Linear Systems, Digital Circuits \& Systems, Data Structures \& Algorithms, Synthetic Biology, Devices \& Circuits, Genome Informatics
+
+\end{rSubsection}
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Student Research Assistant}{September 2017 -- September 2018}{Applied Physics Laboratory}{University of Washington}{}{} 
+
+\item Designed and developed microphone and filtering circuits, ICs, and data acquisition software for an autonomous bat detection and tracking array on the ARM architecture. Collaborated with research associate in seeking to derive computational principles of coordinated flight and sensing across multiple agents through ultrasonic acoustic signal processing and analysis of bat echolocation signals.
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Energy Intern}{June 2017 -- September 2017}{Wastewater Treatment Division} {DNRP, King County, WA}{}{} 
+
+\item Worked and communicated in multidisciplinary teams to improve energy efficiency division-wide in treatment plants and offsite facilities. Analysed energy data for the purpose of tracking quarterly facility progress. Estimated energy cost savings from energy efficiency measures using statistical models in MS Excel. 
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Undergraduate Research Assistant}{February 2016 -- June 2016}{Renewable Energy Analysis Lab}{University of Washington}{}{}  
+
+\item Supported post-doctorate researcher in power systems economics and energy storage integration. Surveyed research literature on energy storage capacity and location optimisation problems.
+
+\end{rSubsection}
+
+\end{rSection}
+
+%-------------------------------------------------------------------------------
+%	PROJECTS
+%-------------------------------------------------------------------------------
+
+\begin{rSection}{Projects} 
+
+%------------------------------------------------
+
+\begin{rSubsection}{Musical Instrument Classification}{June 2018}{}{}{}{}  
+
+\item Designed with a partner a real-time musical instrument classifier able to distinguish solo instruments based on individual acoustic characteristics, or the human-perceived quality called timbre. A support vector machine (SVM) model was used, with reasonable accuracy, to be implemented it in on a low-cost and memory-constrained TI DSP.
+
+\end{rSubsection}
+
+%-------------------------------------------------
+
+\begin{rSubsection}{Conway's Game of Life}{March 2018}{}{}{}{}  
+
+\item Using Verilog, implemented this cellular automaton game on an FPGA with the current state of the cells indicated by patterns on a colour LED array.  
+
+\end{rSubsection}
+
+%-------------------------------------------------
+
+\begin{rSubsection}{Impressionist Painting Effect}{December 2017}{}{}{}{} 
+
+\item Implemented a non-photorealistic rendering (NPR) algorithm in MATLAB for creating an impressionistic oil painting effect on digital images given layered curved brush strokes parameters set in a GUI.   
+
+\end{rSubsection}
+
+%-------------------------------------------------- 
+
+\begin{rSubsection}{Motor Speed Control}{March 2017}{}{}{}{} 
+
+\item Led three-person team in prototyping a pulse width modulation (PWM) speed control for small DC motor. Applied knowledge of semiconductor devices in a laboratory setting to satisfy design project specifications.
+
+\end{rSubsection} 
+
+\end{rSection} 
+
+%--------------------------------------------------------------------------------------
+%   SKILLS
+%--------------------------------------------------------------------------------------
+\begin{rSection}{Skills} \itemsep -3pt        
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
+
+Programming & {Python, MATLAB, C, Java (intermediate); Verilog, \LaTeX, C++ (basic)} \\ 
+
+Technical & {Multisim, Quartus, ModelSim, SolidWorks (intermediate); Microsoft Office Suite (advanced)}      
+
+\end{tabular}    
+
+\end{rSection}
+
+%--------------------------------------------------------------------------------------
+%	HONOURS
+%--------------------------------------------------------------------------------------
+
+\begin{rSection}{Honours} \itemsep -3pt  
+
+Eta Kappa Nu (HKN) - Iota Upsilon Chapter \hfill 2017 -- present \\   
+IEEE Member \hfill 2015 -- present \\   
+Quarterly \& Annual Dean's List \hfill 2014 -- 2018 \\   
+    
+\end{rSection}  
+
+%--------------------------------------------------------------------------------------
+%	END
+%--------------------------------------------------------------------------------------
+\end{document}
