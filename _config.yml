@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Aidan Johnson
 descriptionL: Post-Baccalaureate Researcher | Washington Research Foundation Innovation Post-Baccalaureate Fellow in Neuroengineering
-descriptionR: Applied Physics Laboratory | UW Institute for Neuroengineering | BSc Electrical Engineering | University of Washington, Seattle
+descriptionR: UW Institute for Neuroengineering | BSc Electrical Engineering | University of Washington, Seattle
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo:  # the GitHub repo name for your project
