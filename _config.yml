@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Aidan Johnson
-descriptionL: Post-Baccalaureate Researcher | Washington Research Foundation Innovation Post-Baccalaureate Fellow in Neuroengineering
+descriptionL: Washington Research Foundation Innovation Post-Baccalaureate Fellow in Neuroengineering
 descriptionR: UW Institute for Neuroengineering | BSc Electrical Engineering | University of Washington, Seattle
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
