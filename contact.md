@@ -8,7 +8,7 @@ permalink: /contact/
 [Profile](https://www.linkedin.com/in/j-aidan-johnson/)
 
 #### Email:
-[johnsj96 [at] uw [dot] edu](mailto:johnsj96@uw.edu)
+[j.a.johnson [at] ieee [dot] org](mailto:j.a.johnson@ieee.org)
 #### Mobile:
 [+1 (206) 919-3859](tel:12069193859)
 
