@@ -1,3 +1,4 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Resume/CV in LaTeX
 % Aidan Johnson
 % j.a.johnson@ieee.org
@@ -18,18 +19,16 @@
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
 
-\usepackage[left=1.0cm,top=1.0cm,right=1.0cm,bottom=1.0cm]{geometry} % Document margins
+\usepackage[left=1.0cm,top=0.75cm,right=1.0cm,bottom=0.75cm]{geometry} % Document margins
 
 \usepackage{latexsym}
+\usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[final, colorlinks = true, 
-            linkcolor = black, 
-            citecolor = black,
-            urlcolor = black]{hyperref} % For hyperlinks in the PDF
+\usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
@@ -37,7 +36,14 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\frenchspacing
+
+% Adjust margins
+\addtolength{\evensidemargin}{-1.25cm}
+\addtolength{\oddsidemargin}{-1.25cm}
+\addtolength{\textwidth}{2.54cm}
+\addtolength{\topmargin}{-1.25cm}
+\addtolength{\textheight}{2.54cm}
+
 \urlstyle{same}
 
 \raggedbottom
@@ -97,8 +103,8 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 
 \huge{\bf Aidan Johnson} & +1 (206) 919-3859
-\\ 20016 18th Avenue Northwest & \href{mailto:j.a.johnson@ieee.org}{j.a.johnson@ieee.org}
-\\ Shoreline, WA 98177-2209 & \href{https://www.linkedin.com/in/j-aidan-johnson/}{www.linkedin.com/in/j-aidan-johnson/}
+\\ 20016 18th Ave NW & \href{mailto:j.a.johnson@ieee.org}{j.a.johnson@ieee.org}
+\\ Shoreline, WA 98177 & \href{https://aidanjohnson.github.io}{aidanjohnson.github.io}
 
 \end{tabular*}
 
@@ -110,8 +116,9 @@
 
 \begin{rSubsection}{Bachelor of Science in Electrical Engineering}{September 2014 -- June 2018}{University of Washington}{Seattle, WA}{Cum Laude}{\textit{GPA:} 3.83/4.00}
 
-\item \textit{Concentration Coursework:} Design \& Application of Digital Signal Processing, Medical Imaging, Random Signals in Communications, Digital Image Processing, Discrete-Time \& Continuous Linear Systems, Digital Circuits \& Systems, Data Structures \& Algorithms, Synthetic Biology, Devices \& Circuits, Genome Informatics
-
+\item \textit{Concentration Coursework:} Design \& Application of Digital Signal Processing, Medical Imaging, Random Signals in
+Communications, Digital Image Processing, Discrete-Time \& Continuous Linear Systems, Digital Circuits \& Systems, Data Structures \& Algorithms, Synthetic Biology, Devices \& Circuits, Genome Informatics
+% \item \textit{In Progress:}
 \end{rSubsection}
 
 \end{rSection} 
@@ -126,21 +133,21 @@
 
 \begin{rSubsection}{Student Research Assistant}{September 2017 -- September 2018}{Applied Physics Laboratory}{University of Washington}{}{} 
 
-\item Designed and developed microphone and filtering circuits, ICs, and data acquisition software for an autonomous bat detection and tracking array on the ARM architecture. Collaborated with research associate in seeking to derive computational principles of coordinated flight and sensing across multiple agents through ultrasonic acoustic signal processing and analysis of bat echolocation signals.
+\item Designed and developed, in collaboration with a research associate, microphone and filtering circuits, ICs, and data acquisition software for an autonomous bat detection and tracking ultrasonic acoustic array on the ARM architecture.
 
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Energy Intern}{June 2017 -- September 2017}{Wastewater Treatment Division} {DNRP, King County, WA}{}{} 
+\begin{rSubsection}{Energy Intern}{June -- September 2017}{Wastewater Treatment Division}{King County, DNRP}{}{} 
 
-\item Worked and communicated in multidisciplinary teams to improve energy efficiency division-wide in treatment plants and offsite facilities. Analysed energy data for the purpose of tracking quarterly facility progress. Estimated energy cost savings from energy efficiency measures using statistical models in MS Excel. 
+\item Worked and communicated in multidisciplinary teams, division-wide in treatment plants and offsite facilities. Analysed energy data and estimated energy cost savings from energy efficiency measures using statistical models.
 
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Undergraduate Research Assistant}{February 2016 -- June 2016}{Renewable Energy Analysis Lab}{University of Washington}{}{}  
+\begin{rSubsection}{Undergraduate Research Assistant}{February -- June 2016}{Renewable Energy Analysis Lab}{University of Washington}{}{}  
 
 \item Supported post-doctorate researcher in power systems economics and energy storage integration. Surveyed research literature on energy storage capacity and location optimisation problems.
 
@@ -153,20 +160,19 @@
 %-------------------------------------------------------------------------------
 
 \begin{rSection}{Projects} 
-
 %------------------------------------------------
 
-\begin{rSubsection}{Musical Instrument Classification}{June 2018}{}{}{}{}  
+\begin{rSubsection}{Musical Instrument Classification}{May -- June 2018}{}{}{}{}  
 
-\item Designed with a partner a real-time musical instrument classifier able to distinguish solo instruments based on individual acoustic characteristics, or the human-perceived quality called timbre. A support vector machine (SVM) model was used, with reasonable accuracy, to be implemented it in on a low-cost and memory-constrained TI DSP.
+\item Designed with a partner a real-time musical instrument classifier able to distinguish solo musical instruments based on the perceptual feature of timbre using a support vector machine (SVM) machine learning model for implementation on a low-cost and memory-constrained TI DSP. 
 
 \end{rSubsection}
 
-%-------------------------------------------------
+%------------------------------------------------
 
 \begin{rSubsection}{Conway's Game of Life}{March 2018}{}{}{}{}  
 
-\item Using Verilog, implemented this cellular automaton game on an FPGA with the current state of the cells indicated by patterns on a colour LED array.  
+\item Implemented this cellular automaton game on an FPGA with the current state of the “cells” being indicated by patterns on a colour LED array.  
 
 \end{rSubsection}
 
@@ -182,7 +188,7 @@
 
 \begin{rSubsection}{Motor Speed Control}{March 2017}{}{}{}{} 
 
-\item Led three-person team in prototyping a pulse width modulation (PWM) speed control for small DC motor. Applied knowledge of semiconductor devices in a laboratory setting to satisfy design project specifications.
+\item Led three-person team of students in developing and prototyping a pulse width modulation (PWM) semiconductor-based speed control for small DC motor for a design project.
 
 \end{rSubsection} 
 
@@ -197,7 +203,7 @@
 
 Programming & {Python, MATLAB, C, Java (intermediate); Verilog, \LaTeX, C++ (basic)} \\ 
 
-Technical & {Multisim, Quartus, ModelSim, SolidWorks (intermediate); Microsoft Office Suite (advanced)}      
+Technical & {Git, Multisim, Quartus, ModelSim, SolidWorks (intermediate); Microsoft Office (advanced)}      
 
 \end{tabular}    
 
@@ -208,10 +214,9 @@ Technical & {Multisim, Quartus, ModelSim, SolidWorks (intermediate); Microsoft O
 %--------------------------------------------------------------------------------------
 
 \begin{rSection}{Honours} \itemsep -3pt  
-
+Emeritus UW Institute for Neuroengineering Post-Baccalaureate Fellow \hfill June -- September 2018 \\
 Eta Kappa Nu (HKN) - Iota Upsilon Chapter \hfill 2017 -- present \\   
-IEEE Member \hfill 2015 -- present \\   
-Quarterly \& Annual Dean's List \hfill 2014 -- 2018 \\   
+IEEE Member \hfill 2015 -- present \\ 
     
 \end{rSection}  
 
