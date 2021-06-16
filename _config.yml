@@ -13,19 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Aidan Johnson
-descriptionL: Emeritus Washington Research Foundation Innovation Post-Baccalaureate Fellow in Neuroengineering
-descriptionR: UW Institute for Neuroengineering (UWIN) | 2018 BSc Electrical Engineering | University of Washington, Seattle, WA, USA
+title: Frances Johnson
+descriptionL: 
+descriptionR: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo:  # the GitHub repo name for your project
-github_username: aidanjohnson
+github_username: francesnjohnson
 
 # Optional social link, you can choose from the following options:
 # email, linkedin, twitter, instagram, medium, or dribbble
 social_link: linkedin
-social_username: j-aidan-johnson
-social_email: j.a.johnson@ieee.org
+social_username: frances-johnson-ba31491ab
+social_email: johsnsf@uw.edu
 
 # Set theme color here
 # Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
